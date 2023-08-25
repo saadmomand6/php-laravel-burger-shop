@@ -36,6 +36,8 @@
                 </div>
             @endif   
             <div class="content max-w-6xl mx-auto sm:px-6 lg:px-8">
+            <p style="color:red; text-align:center; font-size:20px; font-weight:bold"
+            class= "mssg">{{session('mssg')}}</p>
                 <div style="color:grey; text-align:center; font-size:20px; font-weight:bold">
                    Welcome to
             </div>
@@ -109,8 +111,7 @@
                             <a href="https://laravel.bigcartel.com" class="ml-1 underline">
                                 Shop
                             </a>
-
-
+                            
                             <a href="/burger/create" style= "color: pink; font-size: 20px">
                                 Order a Burger 
                             </a>

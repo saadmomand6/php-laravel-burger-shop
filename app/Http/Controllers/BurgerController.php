@@ -41,4 +41,9 @@ class BurgerController extends Controller
     public function create(){
         return view('burgers.create');
     }
+    public function store(){
+        error_log(request('name'));
+        error_log(request('type'));
+        return redirect('/');
+    }
 }

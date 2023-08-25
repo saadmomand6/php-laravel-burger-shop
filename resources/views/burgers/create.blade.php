@@ -26,7 +26,8 @@
             <div class="content max-w-6xl mx-auto sm:px-6 lg:px-8">
              <div style="color:yellow; text-align:center; font-size:20px; font-weight:bold">
                   <h1> Add New Pizza </h1>
-                  <form actions="/burger" method="POST">
+                  <form action="/burger" method="POST">
+                    @csrf
                     <label for="name">Enter Your Name:</label>
                     <input type="text" id="name" name="name">
                     <label for="type">Choose Burger:</label>

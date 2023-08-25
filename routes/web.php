@@ -19,4 +19,5 @@ Route::get('/', function () {
 });
 Route::get('/burger', [BurgerController::class, 'index']);
 Route::get('/burger/create', [BurgerController::class, 'create']);
+Route::post('/burger', [BurgerController::class, 'store']);
 Route::get('/burger/{id}', [BurgerController::class, 'show']);

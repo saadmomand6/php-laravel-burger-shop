@@ -34,9 +34,14 @@
                     <select name="type" id="type">
                         <option value="zinger">zinger</option>
                         <option value="zingerwithcheese">zinger with cheese</option>
-                        <option value="beef">beef</option>
+                        <option value="bufalo">bufalo</option>
                         <option value="smoky">smoky</option>
                         <option value="grilled">grilled</option>
+                    </select>
+                    <label for="base">Choose Meat:</label>
+                    <select name="base" id="base">
+                        <option value="beef">beef</option>
+                        <option value="chiken">chiken</option>
                     </select>
                    <input type="submit" value="Place the Order">
                   </form>

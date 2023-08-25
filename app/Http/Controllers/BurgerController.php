@@ -44,6 +44,13 @@ class BurgerController extends Controller
     public function store(){
         error_log(request('name'));
         error_log(request('type'));
-        return redirect('/');
+
+        $burger = new Burger();
+        $burger->name = request('name');
+        $burger->type = request('type');
+        $burger->base = request('base');
+        error_log($burger);
+        $burger->save();
+        return redirect('/')->with('mssg', 'thanks for ordering');
     }
 }

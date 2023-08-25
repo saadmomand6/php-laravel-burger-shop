@@ -43,6 +43,16 @@
                         <option value="beef">beef</option>
                         <option value="chiken">chiken</option>
                     </select>
+                    <fieldset>
+                    <label>Extra Toppings:</label><br />
+                    <input type="checkbox" name="toppings[]" value="mashrooms">Mashrooms<br />
+                    <input type="checkbox" name="toppings[]" value="peppers">Peppers<br />
+                    <input type="checkbox" name="toppings[]" value="olives">Olives<br />
+                    <input type="checkbox" name="toppings[]" value="onions">Onions<br />
+                    <input type="checkbox" name="toppings[]" value="garlic">Garlic<br />
+
+
+                    </fieldset>
                    <input type="submit" value="Place the Order">
                   </form>
             </div> 

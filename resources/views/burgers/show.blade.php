@@ -25,7 +25,8 @@
            
             <div class="content max-w-6xl mx-auto sm:px-6 lg:px-8">
              <div style="color:yellow; text-align:center; font-size:60px; font-weight:bold">
-                   Burgers Menu - {{$id}}
+                   Burgers Menu - {{$id}} /n
+                   this is a show page
             </div> 
           
             </div>

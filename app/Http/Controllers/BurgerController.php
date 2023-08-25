@@ -31,10 +31,13 @@ class BurgerController extends Controller
       //  $burger = Burger::orderBy('name', 'asc')->get();
         $burger = Burger::where('type', 'zinger')->get();
         //$burger = Burger::latest()->get();
-        return view('burger',['burger' => $burger]);
+        return view('burgers.index',['burger' => $burger]);
     
     }
     public function show($id){
-        return view('details', ['id' => $id]);
+        return view('burgers.show', ['id' => $id]);
+    }
+    public function create(){
+        return view('burgers.create');
     }
 }

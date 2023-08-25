@@ -28,7 +28,9 @@ class BurgerController extends Controller
         // return view('burger',['burger' => $burger_list]);
 
         // $burger = Burger::all();
-        $burger = Burger::orderBy('name', 'asc')->get();
+      //  $burger = Burger::orderBy('name', 'asc')->get();
+        $burger = Burger::where('type', 'zinger')->get();
+        //$burger = Burger::latest()->get();
         return view('burger',['burger' => $burger]);
     
     }

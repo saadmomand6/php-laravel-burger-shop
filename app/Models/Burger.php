@@ -9,5 +9,6 @@ class Burger extends Model
 {
     use HasFactory;
     protected $table = 'burger';
+    protected $casts = ['toppings'=> 'array'];
     
 }

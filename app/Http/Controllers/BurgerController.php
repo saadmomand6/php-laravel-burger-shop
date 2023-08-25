@@ -49,6 +49,8 @@ class BurgerController extends Controller
         $burger->name = request('name');
         $burger->type = request('type');
         $burger->base = request('base');
+        $burger->toppings = request('toppings');
+        
         error_log($burger);
         $burger->save();
         return redirect('/')->with('mssg', 'thanks for ordering');

@@ -27,15 +27,16 @@ class BurgerController extends Controller
         // ];
         // return view('burger',['burger' => $burger_list]);
 
-        // $burger = Burger::all();
+         $burger = Burger::all();
       //  $burger = Burger::orderBy('name', 'asc')->get();
-        $burger = Burger::where('type', 'zinger')->get();
+       // $burger = Burger::where('type', 'zinger')->get();
         //$burger = Burger::latest()->get();
         return view('burgers.index',['burger' => $burger]);
     
     }
     public function show($id){
-        return view('burgers.show', ['id' => $id]);
+        $burgernumber = Burger::findOrFail($id);
+        return view('burgers.show', ['burgernumber' => $burgernumber]);
     }
     public function create(){
         return view('burgers.create');

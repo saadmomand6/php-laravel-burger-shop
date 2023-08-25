@@ -24,11 +24,14 @@
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
            
             <div class="content max-w-6xl mx-auto sm:px-6 lg:px-8">
-             <div style="color:yellow; text-align:center; font-size:60px; font-weight:bold">
-                   Burgers Menu - {{$id}} /n
-                   this is a show page
+             <div style="color:yellow; text-align:center; font-size:20px; font-weight:bold">
+             <h1>Order for {{$burgernumber->name}}</h1>
+             <p>Type = {{$burgernumber->type}}</p>
+             <p>Base = {{$burgernumber->base}}</p>
             </div> 
-          
+            <div style= text-align:center;>
+          <a href="/burger" , style="border-style: solid;border-width: 5px;border-color: purple;color:black; text-align:left; font-size:15px; font-weight:bold">back to all burgers</a>
+            </div>
             </div>
         </div>
     </body>

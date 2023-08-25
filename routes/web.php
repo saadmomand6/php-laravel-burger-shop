@@ -17,5 +17,5 @@ use App\Http\Controllers\BurgerController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/burgers', [BurgerController::class, 'index']);
-Route::get('/burgers/{id}', [BurgerController::class, 'show']);
+Route::get('/burger', [BurgerController::class, 'index']);
+Route::get('/burger/{id}', [BurgerController::class, 'show']);

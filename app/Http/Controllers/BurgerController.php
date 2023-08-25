@@ -8,7 +8,7 @@ use App\Models\Burger;
 class BurgerController extends Controller
 { 
     public function index(){
-        // $burgers_list = [
+        // $burgers_list = [   
         //     [
         //            'type'=>'Burger Name' , 'Category'=>'Category', 'Price' => 'Price'
         //     ],
@@ -25,8 +25,10 @@ class BurgerController extends Controller
         //       'type'=>'Grilled_Burger' , 'Category'=>'Beef/Chicken', 'Price' => '$600'
         //     ],
         // ];
+        // return view('burger',['burger' => $burgers_list]);
+
         $burger = Burger::all();
-        return view('burger',['burger' => $burger]);
+       return view('burger',['burger' => $burger]);
     
     }
     public function show($id){

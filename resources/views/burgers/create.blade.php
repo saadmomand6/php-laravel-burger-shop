@@ -24,8 +24,21 @@
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
            
             <div class="content max-w-6xl mx-auto sm:px-6 lg:px-8">
-             <div style="color:yellow; text-align:center; font-size:60px; font-weight:bold">
-                   Add New Pizza
+             <div style="color:yellow; text-align:center; font-size:20px; font-weight:bold">
+                  <h1> Add New Pizza </h1>
+                  <form actions="/burger" method="POST">
+                    <label for="name">Enter Your Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="type">Choose Burger:</label>
+                    <select name="type" id="type">
+                        <option value="zinger">zinger</option>
+                        <option value="zingerwithcheese">zinger with cheese</option>
+                        <option value="beef">beef</option>
+                        <option value="smoky">smoky</option>
+                        <option value="grilled">grilled</option>
+                    </select>
+                   <input type="submit" value="Place the Order">
+                  </form>
             </div> 
           
             </div>

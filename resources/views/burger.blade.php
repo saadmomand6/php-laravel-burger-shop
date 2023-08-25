@@ -27,11 +27,10 @@
              <div style="color:yellow; text-align:center; font-size:60px; font-weight:bold">
                    Burgers Menu
             </div> 
-             @foreach($burger as $burger)
+             @foreach($burger as $burgers)
             <p>
-           {{$burger->name}} | {{$burger->type}} | {{$burger->base}} 
+           {{$burgers->name}} | {{$burgers->type}} | {{$burgers->base}} 
 
-                  <!-- {{$burger['type']}} | {{$burger['Category']}} | {{$burger['Price']}} -->
         </p>
               @endforeach 
             </div>

@@ -36,6 +36,11 @@
                 </li>
                 @endforeach
              </ul>
+             <form action="/burger/{{$burgernumber->id}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button>Complete Order</button>
+             </form>
             </div> 
             <div style= text-align:center;>
           <a href="/burger" , style="border-style: solid;border-width: 5px;border-color: purple;color:black; text-align:left; font-size:15px; font-weight:bold">back to all burgers</a>

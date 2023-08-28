@@ -22,3 +22,5 @@ Route::get('/burger/create', [BurgerController::class, 'create']);
 Route::post('/burger', [BurgerController::class, 'store']);
 Route::get('/burger/{id}', [BurgerController::class, 'show']);
 Route::delete('/burger/{id}', [BurgerController::class, 'destroy']);
+Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

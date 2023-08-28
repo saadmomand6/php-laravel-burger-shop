@@ -17,10 +17,10 @@ use App\Http\Controllers\BurgerController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/burger', [BurgerController::class, 'index']);
+Route::get('/burger', [BurgerController::class, 'index'])->middleware('auth');
 Route::get('/burger/create', [BurgerController::class, 'create']);
 Route::post('/burger', [BurgerController::class, 'store']);
-Route::get('/burger/{id}', [BurgerController::class, 'show']);
-Route::delete('/burger/{id}', [BurgerController::class, 'destroy']);
+Route::get('/burger/{id}', [BurgerController::class, 'show'])->middleware('auth');
+Route::delete('/burger/{id}', [BurgerController::class, 'destroy'])->middleware('auth');
 Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'home'])->name('home');

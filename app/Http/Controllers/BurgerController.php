@@ -7,6 +7,10 @@ use App\Models\Burger;
 
 class BurgerController extends Controller
 { 
+    // public function __construct(){
+    //     $this->middleware('auth');
+    // }
+
     public function index(){
         // $burger_list = [   
         //     [
